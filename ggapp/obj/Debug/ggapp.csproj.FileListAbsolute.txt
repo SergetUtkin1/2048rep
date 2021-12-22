@@ -1,0 +1,15 @@
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp.csproj.AssemblyReference.cache
+C:\Users\stud\source\repos\ggapp\obj\Debug\MainWindow.g.cs
+C:\Users\stud\source\repos\ggapp\obj\Debug\App.g.cs
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp_MarkupCompile.cache
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp_MarkupCompile.lref
+C:\Users\stud\source\repos\ggapp\bin\Debug\ggapp.exe.config
+C:\Users\stud\source\repos\ggapp\bin\Debug\ggapp.exe
+C:\Users\stud\source\repos\ggapp\bin\Debug\ggapp.pdb
+C:\Users\stud\source\repos\ggapp\obj\Debug\MainWindow.baml
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp.g.resources
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp.Properties.Resources.resources
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp.csproj.GenerateResource.cache
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp.csproj.CoreCompileInputs.cache
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp.exe
+C:\Users\stud\source\repos\ggapp\obj\Debug\ggapp.pdb
