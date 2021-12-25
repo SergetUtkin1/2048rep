@@ -44,6 +44,8 @@ namespace ggapp
             TB14.Text = (mArray[13] == 0 ? null : mArray[13].ToString());
             TB15.Text = (mArray[14] == 0 ? null : mArray[14].ToString());
             TB16.Text = (mArray[15] == 0 ? null : mArray[15].ToString());
+
+            IsWin();
         }
 
         public MainWindow()
@@ -65,6 +67,16 @@ namespace ggapp
             }
             SetterOFValues();
             KeepOn();
+        }
+
+        public void IsWin()
+        {
+            if (mArray.Contains(2048))
+            {
+                Window win = new menu();
+                win.Show();
+                MessageBox.Show("U WIN");
+            }
         }
 
         public void KeepOn()
@@ -89,10 +101,12 @@ namespace ggapp
                 {
                     ans = true;
                 }
-            }
-            
+            }           
+
             if (!ans)
             {
+                Window win = new menu();
+                win.Show();
                 MessageBox.Show("GAME OVER");
             }
         }

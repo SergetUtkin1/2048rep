@@ -28,3 +28,5 @@ C:\Users\user\Source\Repos\SergetUtkin1\2048rep\ggapp\obj\Debug\ggapp.csproj.Gen
 C:\Users\user\Source\Repos\SergetUtkin1\2048rep\ggapp\obj\Debug\ggapp.csproj.CoreCompileInputs.cache
 C:\Users\user\Source\Repos\SergetUtkin1\2048rep\ggapp\obj\Debug\ggapp.exe
 C:\Users\user\Source\Repos\SergetUtkin1\2048rep\ggapp\obj\Debug\ggapp.pdb
+C:\Users\user\source\repos\SergetUtkin1\2048rep\ggapp\obj\Debug\menu.g.cs
+C:\Users\user\source\repos\SergetUtkin1\2048rep\ggapp\obj\Debug\menu.baml
