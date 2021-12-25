@@ -64,6 +64,37 @@ namespace ggapp
                 mArray[index] = mArray[index] == 0 ? dValues[random.Next(0, 2)] : mArray[index];
             }
             SetterOFValues();
+            KeepOn();
+        }
+
+        public void KeepOn()
+        {
+            bool ans = false;
+
+            if (mArray.Count(x => x == 0) != 0)
+            {
+                ans = true;
+            }
+
+            for (int i = 0; i < 12; i++)
+            {
+                if (mArray[i] == mArray[i + 4])
+                {
+                    ans = true;
+                }
+            }
+            for (int i = 0; i < 15; i++)
+            {
+                if (mArray[i] == mArray[i + 1] && (i + 1) % 4 != 0)
+                {
+                    ans = true;
+                }
+            }
+            
+            if (!ans)
+            {
+                MessageBox.Show("GAME OVER");
+            }
         }
 
         private void UP_Click(object sender, RoutedEventArgs e)
@@ -246,7 +277,59 @@ namespace ggapp
 
         private void LEFT_Click(object sender, RoutedEventArgs e)
         {
+            bool action = false;
 
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 15; j++)
+                {
+                    if (mArray[j] == 0 && j % 4 != 3 && mArray[j + 1] != 0)
+                        action = true;
+                }
+            }
+
+            for (int i = 0; i < 15; i++)
+            {
+                if ((mArray[i] == 0 || mArray[i] == mArray[i + 1]) && mArray[i + 1] != 0 && i % 4 != 3)
+                {
+                    action = true;
+                }
+            }
+
+            if (action)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    for (int j = 0; j < 15; j++)
+                    {
+                        if (mArray[j] == 0 && j % 4 != 3 && mArray[j + 1] != 0)
+                        {
+                            mArray[j] = mArray[j + 1];
+                            mArray[j + 1] = 0;
+                        }
+                    }
+                }
+
+                for (int i = 0; i < 15; i++)
+                {
+                    if ((mArray[i] == 0 || mArray[i] == mArray[i + 1]) && mArray[i + 1] != 0 && i % 4 != 3)
+                    {
+                        mArray[i] += mArray[i + 1];
+                        mArray[i + 1] = 0;
+                        for (int j = 0; j < 15; j++)
+                        {
+                            if (mArray[j] == 0 && j % 4 != 3 && mArray[j + 1] != 0)
+                            {
+                                mArray[j] = mArray[j + 1];
+                                mArray[j + 1] = 0;
+                            }
+                        }
+                    }
+                }
+
+                SetterOFValues();
+                Adder();
+            }
         }
-    }
+    }        
 }

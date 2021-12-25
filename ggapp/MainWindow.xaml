@@ -42,7 +42,7 @@
 
         <Button x:Name="UP" Content="UP" Grid.Row="4" Grid.Column="0"  FontFamily="Segoe UI Light" FontSize="36" Click="UP_Click"/>
         <Button x:Name="DOWN" Content="DOWN" Grid.Row="4" Grid.Column="1"  FontFamily="Segoe UI Light" FontSize="36" Click="DOWN_Click"/>
-        <Button x:Name="RIGHT" Content="RIGHT" Grid.Row="4" Grid.Column="2"  FontFamily="Segoe UI Light" FontSize="36" Click="RIGHT_Click"/>
-        <Button x:Name="LEFT" Content="LEFT" Grid.Row="4" Grid.Column="3"  FontFamily="Segoe UI Light" FontSize="36" Click="LEFT_Click"/>
+        <Button x:Name="RIGHT" Content="RIGHT" Grid.Row="4" Grid.Column="3"  FontFamily="Segoe UI Light" FontSize="36" Click="RIGHT_Click"/>
+        <Button x:Name="LEFT" Content="LEFT" Grid.Row="4" Grid.Column="2"  FontFamily="Segoe UI Light" FontSize="36" Click="LEFT_Click"/>
     </Grid>
 </Window>
